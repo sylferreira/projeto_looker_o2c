@@ -1,33 +1,18 @@
 # Dashboard O2C — Looker Studio
 
-O dashboard foi projetado para monitorar:
+This dashboard was created to monitoring the Order Fill Rate status and reasons of rejections
 
 - Fill Rate by customer groups (channel, region, segmentation) 
 - Offender analysis (root causes)  
 ---
 
-## 🧭 Estrutura das páginas
+## Dashboard pages
 
-### 1. Visão Geral
-- Fill Rate geral
-- Fill Rate canal / regional
-- Offenders principais
-- Rejeições
-
-### 2. Análise de Gargalos
-- Offenders
-- Motivos de rejeição
-- Lead Time breakdown
-
-### 3. Disponibilidade Semanal
-- Semana solicitada vs semana real
-- Disponibilidade por planta
-- Confirmado vs Pedido
-
-### 4. Cliente e Produto
-- Top clientes com problemas
-- Top produtos com alta rejeição
-
+### Sales Level Analysis
+- Orders Fill Rate
+- Rejection Rate
+- Ontime delivery
+- Rejections by channel, rejections and offensors
 ---
 
 ##  Datasource
