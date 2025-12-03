@@ -8,33 +8,33 @@ Table documentation **fact_o2c** on pipeline BigQuery + Looker.
 
 | Field | Type | Description |
 |------|------|-----------|
-| order_id | INT64 | Identificador único do pedido |
-| order_type_id | STRING | Tipo de pedido SAP |
-| sales_org_id | STRING | Organização de vendas |
-| distribution_channel_id | STRING | Canal |
-| division_id | STRING | Divisão |
-| customer_id | STRING | Cliente |
-| sold_to_party | STRING | Cliente que comprou |
-| ship_to_party | STRING | Cliente destino |
-| product_id | STRING | Produto |
-| plant_id | STRING | Planta de origem |
-| sales_document_date | DATE | Data do pedido |
-| created_on | DATE | Data de criação no SAP |
-| created_by | STRING | Usuário SAP |
-| requested_delivery_date | DATE | Data solicitada |
-| confirmed_delivery_date | DATE | Data confirmada |
-| planned_goods_issue_date | DATE | Data planejada GI |
-| actual_goods_issue_date | DATE | Data real GI |
-| order_qty | INT64 | Quantidade pedida |
-| confirmed_qty | INT64 | Quantidade confirmada |
-| delivery_qty | INT64 | Quantidade entregue |
-| rejected_qty | INT64 | Quantidade rejeitada |
-| net_value | FLOAT64 | Valor líquido |
-| delivery_document_number | STRING | Número da entrega |
-| billing_document | STRING | Fatura |
-| offender_code | STRING | Código de problema |
-| rejection_reason_id | STRING | Motivo rejeição |
-| created_at | TIMESTAMP | Carimbo de ingestão |
+| order_id | INT64 | Unique order identification |
+| order_type_id | STRING | SAP order code |
+| sales_org_id | STRING | Sales organization group  |
+| distribution_channel_id | STRING | Channel (customer) |
+| division_id | STRING | Division (customer) |
+| customer_id | STRING | Customer |
+| sold_to_party | STRING | Customer (billing) |
+| ship_to_party | STRING | Customer (delivery) |
+| product_id | STRING | SKU/Item |
+| plant_id | STRING | Plant (factory) |
+| sales_document_date | DATE | Order date |
+| created_on | DATE | SAP order creation date|
+| created_by | STRING | SAP user |
+| requested_delivery_date | DATE | Date requested by customer to deliver the order |
+| confirmed_delivery_date | DATE | Date where the customer receive the order |
+| planned_goods_issue_date | DATE | Planned date to billing order |
+| actual_goods_issue_date | DATE | Order date to billing order |
+| order_qty | INT64 | Quantity of itens ordered |
+| confirmed_qty | INT64 | Quantity of itens confirmed by the customer |
+| delivery_qty | INT64 |  Quantity of itens delivered |
+| rejected_qty | INT64 |  Quantity of itens rejected |
+| net_value | FLOAT64 | Liquid value of the order |
+| delivery_document_number | STRING | Delivery numnber |
+| billing_document | STRING | Billing document |
+| offender_code | STRING | Offender code |
+| rejection_reason_id | STRING | Reason of rejection |
+| created_at | TIMESTAMP | Date o create of the rejection |
 
 ---
 
