@@ -15,7 +15,7 @@ SUM(rejected_qty) / SUM(order_qty)
 
 ---
 
-## Segmentações recomendadas
+## Recommended segmentations
 
 - Channel  
 - Region  
