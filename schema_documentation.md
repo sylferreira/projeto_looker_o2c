@@ -1,12 +1,12 @@
-# 📘 Dicionário de Dados — O2C
+# Data dictionary — O2C
 
-Documentação da tabela **fact_o2c** usada no pipeline BigQuery + Looker.
+Table documentation **fact_o2c** on pipeline BigQuery + Looker.
 
 ---
 
-## 🧱 Estrutura da tabela
+## Data Structure
 
-| Campo | Tipo | Descrição |
+| Field | Type | Description |
 |------|------|-----------|
 | order_id | INT64 | Identificador único do pedido |
 | order_type_id | STRING | Tipo de pedido SAP |
@@ -38,10 +38,9 @@ Documentação da tabela **fact_o2c** usada no pipeline BigQuery + Looker.
 
 ---
 
-## 🧮 Métricas derivadas (VIEW vw_o2c_metrics)
+## Metrics (VIEW vw_o2c_metrics)
 
 - **fill_rate** = delivery_qty / order_qty  
-- **confirmation_rate**  
 - **rejection_rate**  
 - **leadtime_confirmed**  
 - **leadtime_agi**  
@@ -50,8 +49,8 @@ Documentação da tabela **fact_o2c** usada no pipeline BigQuery + Looker.
 
 ---
 
-## 🔍 Observações
+## Observations
 
-- Datas são sempre **DATE**, nunca DATETIME  
-- Campos numéricos vêm tratados como INT64  
-- Offender é categorizado para análise de Supply Chain  
+- Date are **DATE**, not DATETIME  
+- Numeric fields as INT64  
+- Offender is a Supply Chain  category analysis
