@@ -11,12 +11,18 @@ CONCAT(
     ELSE "below expectations."
   END
 )
+---
 
 ## Main of cause gaps:
 CONCAT(
 " Main cause of gaps: ",
 CASE WHEN SUM(rejected_qty) > 0 THEN "Rejections" ELSE "Supply constraints" END
 )
+-----
 
 ## Offender most frequent: 
 CONCAT("Offender most frequent: ", MAX(offender_name) )
+
+
+
+
