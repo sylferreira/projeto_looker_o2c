@@ -14,5 +14,5 @@ Demand metrics: Fill Rate, Forecast Accuracy, OTIF, etc.
 
 Report link: https://lookerstudio.google.com/reporting/0f48dcb1-4429-4291-8c02-da3f9899cd49
 
-![Dashboard Preview](assets/dashboard.png)
+![Dashboard Preview](assets/dashboard.png.png)
 
